@@ -13,9 +13,9 @@ class InputKontakViewModel{
     
     var itemList = PublishSubject<[DataModel]>()
     
-    func insertItem(){
+    func insertItem(name: String, no: String){
 
-        dataItems.insert(DataModel(name: "Bambang", noHp: "029832323232"), at: 3)
+        dataItems.append(DataModel(name: name, noHp: no))
 
         itemList.onNext(dataItems)
         itemList.onCompleted()

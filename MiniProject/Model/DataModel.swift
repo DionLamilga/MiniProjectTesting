@@ -10,4 +10,9 @@ import Foundation
 struct DataModel{
     var name: String
     var noHp: String
+    
+    init(name: String, noHp: String){
+        self.name = name
+        self.noHp = noHp
+    }
 }

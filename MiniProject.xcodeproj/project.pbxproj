@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CD400C60357497D10CD6AB5 /* Pods_MiniProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A169DF27618802B9F507DA83 /* Pods_MiniProject.framework */; };
 		847E796F27F568A800B1D7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E796E27F568A800B1D7E2 /* AppDelegate.swift */; };
 		847E797127F568A800B1D7E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E797027F568A800B1D7E2 /* SceneDelegate.swift */; };
 		847E797327F568A800B1D7E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E797227F568A800B1D7E2 /* ViewController.swift */; };
 		847E797627F568A800B1D7E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E797427F568A800B1D7E2 /* Main.storyboard */; };
 		847E797827F568AA00B1D7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847E797727F568AA00B1D7E2 /* Assets.xcassets */; };
 		847E797B27F568AA00B1D7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E797927F568AA00B1D7E2 /* LaunchScreen.storyboard */; };
+		847E798E27F5A02400B1D7E2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E798D27F5A02400B1D7E2 /* DataModel.swift */; };
+		847E799527F5A1F300B1D7E2 /* ListKontakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E799327F5A1F300B1D7E2 /* ListKontakTableViewCell.swift */; };
+		847E799627F5A1F300B1D7E2 /* ListKontakTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847E799427F5A1F300B1D7E2 /* ListKontakTableViewCell.xib */; };
+		847E799827F5AAF700B1D7E2 /* ListKontakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E799727F5AAF700B1D7E2 /* ListKontakViewController.swift */; };
+		847E799A27F5AB1F00B1D7E2 /* ListKontak.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E799927F5AB1F00B1D7E2 /* ListKontak.storyboard */; };
+		847E799C27F5AB9C00B1D7E2 /* InputKontak.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E799B27F5AB9C00B1D7E2 /* InputKontak.storyboard */; };
+		847E799E27F5ABDA00B1D7E2 /* InputKontakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E799D27F5ABDA00B1D7E2 /* InputKontakViewController.swift */; };
+		847E79A027F5AD0E00B1D7E2 /* ListKontakViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E799F27F5AD0E00B1D7E2 /* ListKontakViewModel.swift */; };
+		847E79A227F5C56400B1D7E2 /* InputKontakViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E79A127F5C56300B1D7E2 /* InputKontakViewModel.swift */; };
+		847E79A427F5C79600B1D7E2 /* ValueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E79A327F5C79600B1D7E2 /* ValueData.swift */; };
+		847E79AC27F5D12700B1D7E2 /* DetailKontak.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E79AB27F5D12700B1D7E2 /* DetailKontak.storyboard */; };
+		847E79AE27F5D13300B1D7E2 /* DetailKontakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E79AD27F5D13300B1D7E2 /* DetailKontakViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		739FE402DA16E68252CEEA62 /* Pods-MiniProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniProject.release.xcconfig"; path = "Target Support Files/Pods-MiniProject/Pods-MiniProject.release.xcconfig"; sourceTree = "<group>"; };
+		7E5452979BDB85FFC22EFD58 /* Pods-MiniProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniProject.debug.xcconfig"; path = "Target Support Files/Pods-MiniProject/Pods-MiniProject.debug.xcconfig"; sourceTree = "<group>"; };
 		847E796B27F568A800B1D7E2 /* MiniProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847E796E27F568A800B1D7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847E797027F568A800B1D7E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +39,19 @@
 		847E797727F568AA00B1D7E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847E797A27F568AA00B1D7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847E797C27F568AA00B1D7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847E798D27F5A02400B1D7E2 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		847E799327F5A1F300B1D7E2 /* ListKontakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKontakTableViewCell.swift; sourceTree = "<group>"; };
+		847E799427F5A1F300B1D7E2 /* ListKontakTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListKontakTableViewCell.xib; sourceTree = "<group>"; };
+		847E799727F5AAF700B1D7E2 /* ListKontakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKontakViewController.swift; sourceTree = "<group>"; };
+		847E799927F5AB1F00B1D7E2 /* ListKontak.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListKontak.storyboard; sourceTree = "<group>"; };
+		847E799B27F5AB9C00B1D7E2 /* InputKontak.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputKontak.storyboard; sourceTree = "<group>"; };
+		847E799D27F5ABDA00B1D7E2 /* InputKontakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputKontakViewController.swift; sourceTree = "<group>"; };
+		847E799F27F5AD0E00B1D7E2 /* ListKontakViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKontakViewModel.swift; sourceTree = "<group>"; };
+		847E79A127F5C56300B1D7E2 /* InputKontakViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputKontakViewModel.swift; sourceTree = "<group>"; };
+		847E79A327F5C79600B1D7E2 /* ValueData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueData.swift; sourceTree = "<group>"; };
+		847E79AB27F5D12700B1D7E2 /* DetailKontak.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailKontak.storyboard; sourceTree = "<group>"; };
+		847E79AD27F5D13300B1D7E2 /* DetailKontakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKontakViewController.swift; sourceTree = "<group>"; };
+		A169DF27618802B9F507DA83 /* Pods_MiniProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD400C60357497D10CD6AB5 /* Pods_MiniProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BDE4C3A1F697B91CB270FF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E5452979BDB85FFC22EFD58 /* Pods-MiniProject.debug.xcconfig */,
+				739FE402DA16E68252CEEA62 /* Pods-MiniProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		847E796227F568A800B1D7E2 = {
 			isa = PBXGroup;
 			children = (
 				847E796D27F568A800B1D7E2 /* MiniProject */,
 				847E796C27F568A800B1D7E2 /* Products */,
+				2BDE4C3A1F697B91CB270FF5 /* Pods */,
+				F2B80D4E454A1EF7E01E5269 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +96,91 @@
 		847E796D27F568A800B1D7E2 /* MiniProject */ = {
 			isa = PBXGroup;
 			children = (
+				847E79A527F5CE6600B1D7E2 /* Other */,
+				847E798F27F5A19E00B1D7E2 /* Reusable Element */,
+				847E798C27F5A00700B1D7E2 /* Model */,
+				847E79A827F5D0F400B1D7E2 /* DetailKontak */,
+				847E798327F5749F00B1D7E2 /* ListKontak */,
+				847E798227F5749100B1D7E2 /* InputKontak */,
+				847E797727F568AA00B1D7E2 /* Assets.xcassets */,
+				847E797C27F568AA00B1D7E2 /* Info.plist */,
+			);
+			path = MiniProject;
+			sourceTree = "<group>";
+		};
+		847E798227F5749100B1D7E2 /* InputKontak */ = {
+			isa = PBXGroup;
+			children = (
+				847E799B27F5AB9C00B1D7E2 /* InputKontak.storyboard */,
+				847E799D27F5ABDA00B1D7E2 /* InputKontakViewController.swift */,
+				847E79A127F5C56300B1D7E2 /* InputKontakViewModel.swift */,
+			);
+			path = InputKontak;
+			sourceTree = "<group>";
+		};
+		847E798327F5749F00B1D7E2 /* ListKontak */ = {
+			isa = PBXGroup;
+			children = (
+				847E799727F5AAF700B1D7E2 /* ListKontakViewController.swift */,
+				847E799927F5AB1F00B1D7E2 /* ListKontak.storyboard */,
+				847E799F27F5AD0E00B1D7E2 /* ListKontakViewModel.swift */,
+			);
+			path = ListKontak;
+			sourceTree = "<group>";
+		};
+		847E798C27F5A00700B1D7E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				847E798D27F5A02400B1D7E2 /* DataModel.swift */,
+				847E79A327F5C79600B1D7E2 /* ValueData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		847E798F27F5A19E00B1D7E2 /* Reusable Element */ = {
+			isa = PBXGroup;
+			children = (
+				847E799027F5A1AA00B1D7E2 /* ListKontakCell */,
+			);
+			path = "Reusable Element";
+			sourceTree = "<group>";
+		};
+		847E799027F5A1AA00B1D7E2 /* ListKontakCell */ = {
+			isa = PBXGroup;
+			children = (
+				847E799327F5A1F300B1D7E2 /* ListKontakTableViewCell.swift */,
+				847E799427F5A1F300B1D7E2 /* ListKontakTableViewCell.xib */,
+			);
+			path = ListKontakCell;
+			sourceTree = "<group>";
+		};
+		847E79A527F5CE6600B1D7E2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
 				847E796E27F568A800B1D7E2 /* AppDelegate.swift */,
 				847E797027F568A800B1D7E2 /* SceneDelegate.swift */,
 				847E797227F568A800B1D7E2 /* ViewController.swift */,
 				847E797427F568A800B1D7E2 /* Main.storyboard */,
-				847E797727F568AA00B1D7E2 /* Assets.xcassets */,
 				847E797927F568AA00B1D7E2 /* LaunchScreen.storyboard */,
-				847E797C27F568AA00B1D7E2 /* Info.plist */,
 			);
-			path = MiniProject;
+			path = Other;
+			sourceTree = "<group>";
+		};
+		847E79A827F5D0F400B1D7E2 /* DetailKontak */ = {
+			isa = PBXGroup;
+			children = (
+				847E79AB27F5D12700B1D7E2 /* DetailKontak.storyboard */,
+				847E79AD27F5D13300B1D7E2 /* DetailKontakViewController.swift */,
+			);
+			path = DetailKontak;
+			sourceTree = "<group>";
+		};
+		F2B80D4E454A1EF7E01E5269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A169DF27618802B9F507DA83 /* Pods_MiniProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847E797F27F568AA00B1D7E2 /* Build configuration list for PBXNativeTarget "MiniProject" */;
 			buildPhases = (
+				FA51DA2E40AD2E4D9049C86B /* [CP] Check Pods Manifest.lock */,
 				847E796727F568A800B1D7E2 /* Sources */,
 				847E796827F568A800B1D7E2 /* Frameworks */,
 				847E796927F568A800B1D7E2 /* Resources */,
+				B84110FA2DDFADCED2911801 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +243,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847E799627F5A1F300B1D7E2 /* ListKontakTableViewCell.xib in Resources */,
+				847E799A27F5AB1F00B1D7E2 /* ListKontak.storyboard in Resources */,
+				847E799C27F5AB9C00B1D7E2 /* InputKontak.storyboard in Resources */,
 				847E797B27F568AA00B1D7E2 /* LaunchScreen.storyboard in Resources */,
+				847E79AC27F5D12700B1D7E2 /* DetailKontak.storyboard in Resources */,
 				847E797827F568AA00B1D7E2 /* Assets.xcassets in Resources */,
 				847E797627F568A800B1D7E2 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +255,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B84110FA2DDFADCED2911801 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniProject/Pods-MiniProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniProject/Pods-MiniProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiniProject/Pods-MiniProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA51DA2E40AD2E4D9049C86B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiniProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		847E796727F568A800B1D7E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847E79A227F5C56400B1D7E2 /* InputKontakViewModel.swift in Sources */,
+				847E799527F5A1F300B1D7E2 /* ListKontakTableViewCell.swift in Sources */,
 				847E797327F568A800B1D7E2 /* ViewController.swift in Sources */,
 				847E796F27F568A800B1D7E2 /* AppDelegate.swift in Sources */,
 				847E797127F568A800B1D7E2 /* SceneDelegate.swift in Sources */,
+				847E79A027F5AD0E00B1D7E2 /* ListKontakViewModel.swift in Sources */,
+				847E799E27F5ABDA00B1D7E2 /* InputKontakViewController.swift in Sources */,
+				847E799827F5AAF700B1D7E2 /* ListKontakViewController.swift in Sources */,
+				847E798E27F5A02400B1D7E2 /* DataModel.swift in Sources */,
+				847E79AE27F5D13300B1D7E2 /* DetailKontakViewController.swift in Sources */,
+				847E79A427F5C79600B1D7E2 /* ValueData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +456,7 @@
 		};
 		847E798027F568AA00B1D7E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5452979BDB85FFC22EFD58 /* Pods-MiniProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +485,7 @@
 		};
 		847E798127F568AA00B1D7E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 739FE402DA16E68252CEEA62 /* Pods-MiniProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

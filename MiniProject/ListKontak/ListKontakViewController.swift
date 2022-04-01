@@ -20,7 +20,6 @@ class ListKontakViewController: UIViewController {
         super.viewDidLoad()
         tableList.register(ListKontakTableViewCell.nib(), forCellReuseIdentifier: ListKontakTableViewCell.identifier)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "ADD", style: .plain, target: self, action: #selector(addTapped))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(testItem))
         
         configureTable()
         cellTapped()
@@ -41,6 +40,7 @@ class ListKontakViewController: UIViewController {
         tableList.rx.modelSelected(DataModel.self).subscribe(onNext: {selectItem in
             let showMovie = UIStoryboard(name: "DetailKontak", bundle: nil)
             let vc = showMovie.instantiateViewController(withIdentifier: "kontak") as! DetailKontakViewController
+            vc.viewModel.itemList = self.viewModel.itemList
             vc.name = selectItem.name
             vc.noTelp = selectItem.noHp
             self.navigationController?.pushViewController(vc, animated: true)
@@ -51,7 +51,7 @@ class ListKontakViewController: UIViewController {
 //    func removeItem(at indexPath: IndexPath){
 //        guard var sections = try? viewModel.itemList.value else {return}
 //        var currentSection = sections[indexPath.row]
-//        
+//
 //        currentSection.name.remove(at: indexPath.row)
 //    }
     
@@ -63,7 +63,4 @@ class ListKontakViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    @objc func testItem(){
-        configureTable()
-    }
 }

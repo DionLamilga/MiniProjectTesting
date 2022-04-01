@@ -15,6 +15,7 @@ class DetailKontakViewController: UIViewController {
     
     var name: String?
     var noTelp: String?
+    let viewModel = DetailKontakViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,8 @@ class DetailKontakViewController: UIViewController {
     }
 
     @IBAction func editTapped(_ sender: Any) {
+        viewModel.updateitem(name: fieldName.text ?? "", no: fieldNoTelp.text ?? "")
+        navigationController?.popViewController(animated: true)
     }
     
     @objc func deleteTapped(){

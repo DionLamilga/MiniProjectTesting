@@ -19,10 +19,12 @@ class ListKontakViewController: UIViewController {
         super.viewDidLoad()
         tableList.register(ListKontakTableViewCell.nib(), forCellReuseIdentifier: ListKontakTableViewCell.identifier)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "ADD", style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(testItem))
         
         configureTable()
         cellTapped()
     }
+    
     
     func configureTable(){
         viewModel.itemList.bind(to: tableList.rx.items(cellIdentifier: ListKontakTableViewCell.identifier, cellType: ListKontakTableViewCell.self)){ row, item, cell in
@@ -53,4 +55,7 @@ class ListKontakViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @objc func testItem(){
+        configureTable()
+    }
 }

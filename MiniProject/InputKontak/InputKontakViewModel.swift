@@ -11,13 +11,16 @@ import RxCocoa
 
 class InputKontakViewModel{
     
-    var itemList = PublishSubject<[DataModel]>()
+   var itemList = BehaviorSubject<[DataModel]>(value: dataItems)
+    let disposeBag = DisposeBag()
     
     func insertItem(name: String, no: String){
-
-        dataItems.append(DataModel(name: name, noHp: no))
-
-        itemList.onNext(dataItems)
-        itemList.onCompleted()
+        
+        itemList.asObservable().subscribe(onNext: {value in
+            print(value)
+        })
+        itemList.onNext(dataItems + [DataModel(name: name, noHp: no)])
+        //itemList.onNext([DataModel(name: name, noHp: no)])
+        //itemList.onCompleted()
     }
 }

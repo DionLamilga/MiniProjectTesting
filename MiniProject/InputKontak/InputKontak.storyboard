@@ -75,6 +75,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mbJ-kj-1NB"/>
                     <connections>
+                        <outlet property="btnSave" destination="RBb-Ne-hhJ" id="cgw-sP-8FG"/>
                         <outlet property="fieldName" destination="dJP-3m-Vv1" id="JzM-0p-EFp"/>
                         <outlet property="fieldNotelp" destination="fS4-I8-WIN" id="F4R-Uj-Jfl"/>
                     </connections>

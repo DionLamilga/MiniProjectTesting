@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class ListKontakViewController: UIViewController {
 
@@ -38,7 +39,6 @@ class ListKontakViewController: UIViewController {
     
     func cellTapped(){
         tableList.rx.modelSelected(DataModel.self).subscribe(onNext: {selectItem in
-            
             let showMovie = UIStoryboard(name: "DetailKontak", bundle: nil)
             let vc = showMovie.instantiateViewController(withIdentifier: "kontak") as! DetailKontakViewController
             vc.name = selectItem.name
@@ -47,7 +47,15 @@ class ListKontakViewController: UIViewController {
             
         }).disposed(by: disposeBag)
     }
-
+    
+//    func removeItem(at indexPath: IndexPath){
+//        guard var sections = try? viewModel.itemList.value else {return}
+//        var currentSection = sections[indexPath.row]
+//        
+//        currentSection.name.remove(at: indexPath.row)
+//    }
+    
+    
     @objc func addTapped(){
         let showMovie = UIStoryboard(name: "InputKontak", bundle: nil)
         let vc = showMovie.instantiateViewController(withIdentifier: "input") as! InputKontakViewController

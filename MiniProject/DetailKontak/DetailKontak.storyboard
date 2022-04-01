@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,28 +17,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeQ-gS-fvR">
-                                <rect key="frame" x="0.0" y="134" width="414" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0834324234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noI-Zc-6x7">
-                                <rect key="frame" x="0.0" y="264" width="414" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PkZ-v3-adV">
+                                <rect key="frame" x="20" y="144" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KGD-dO-f9R">
+                                <rect key="frame" x="20" y="254" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r2-Pu-3E1">
+                                <rect key="frame" x="20" y="766" width="374" height="52"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="iRZ-tT-2hR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="EDIT">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="23"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="editTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PnS-vd-CkW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2r2-Pu-3E1" secondAttribute="bottom" constant="44" id="4FA-bV-f1w"/>
+                            <constraint firstItem="KGD-dO-f9R" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="6Q2-mt-qhb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PkZ-v3-adV" secondAttribute="trailing" constant="20" id="Cyn-K4-5Wy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2r2-Pu-3E1" secondAttribute="trailing" constant="20" id="EVD-vk-smW"/>
+                            <constraint firstItem="2r2-Pu-3E1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="RIv-rV-HY0"/>
+                            <constraint firstItem="KGD-dO-f9R" firstAttribute="top" secondItem="PkZ-v3-adV" secondAttribute="bottom" constant="76" id="mab-5w-ITz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KGD-dO-f9R" secondAttribute="trailing" constant="20" id="o7C-8B-apq"/>
+                            <constraint firstItem="PkZ-v3-adV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="uGI-hx-bDm"/>
+                            <constraint firstItem="PkZ-v3-adV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="56" id="y0g-mZ-Zfe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uDs-y2-nYS"/>
                     <connections>
-                        <outlet property="labelName" destination="QeQ-gS-fvR" id="DeK-mS-5Br"/>
-                        <outlet property="labelNotelp" destination="noI-Zc-6x7" id="KOy-cY-n7e"/>
+                        <outlet property="fieldName" destination="PkZ-v3-adV" id="Jih-uw-Aeg"/>
+                        <outlet property="fieldNoTelp" destination="KGD-dO-f9R" id="Fwl-ex-kLZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -64,6 +87,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

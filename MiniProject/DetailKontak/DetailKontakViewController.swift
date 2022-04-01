@@ -8,9 +8,10 @@
 import UIKit
 
 class DetailKontakViewController: UIViewController {
-
-    @IBOutlet weak var labelName: UILabel!
-    @IBOutlet weak var labelNotelp: UILabel!
+    
+    
+    @IBOutlet weak var fieldName: UITextField!
+    @IBOutlet weak var fieldNoTelp: UITextField!
     
     var name: String?
     var noTelp: String?
@@ -18,9 +19,17 @@ class DetailKontakViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        labelName.text = name
-        labelNotelp.text = noTelp
+        fieldName.text = name
+        fieldNoTelp.text = noTelp
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "DELETE", style: .plain, target: self, action: #selector(deleteTapped))
+        navigationItem.rightBarButtonItem?.tintColor = .red
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func editTapped(_ sender: Any) {
+    }
+    
+    @objc func deleteTapped(){
+        
+    }
 }

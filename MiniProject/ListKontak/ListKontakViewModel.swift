@@ -11,17 +11,15 @@ import RxCocoa
 
 class ListKontakViewModel{
     
-    var itemList = BehaviorSubject<[DataModel]>(value: dataItems)
+    var itemList = BehaviorRelay<[DataModel]>(value: dataItems)
     let disposeBag = DisposeBag()
     
     func fetchItem(){
         
         itemList.asObservable().subscribe(onNext: {value in
-            print(value)
-            print("test")
-        })
+        }).disposed(by: disposeBag)
         
-        itemList.onNext(dataItems)
+        itemList.accept(dataItems)
         //itemList.onCompleted()
     }
     

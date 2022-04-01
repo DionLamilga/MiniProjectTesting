@@ -26,6 +26,7 @@
 		847E79A427F5C79600B1D7E2 /* ValueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E79A327F5C79600B1D7E2 /* ValueData.swift */; };
 		847E79AC27F5D12700B1D7E2 /* DetailKontak.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847E79AB27F5D12700B1D7E2 /* DetailKontak.storyboard */; };
 		847E79AE27F5D13300B1D7E2 /* DetailKontakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E79AD27F5D13300B1D7E2 /* DetailKontakViewController.swift */; };
+		847E79B027F7366A00B1D7E2 /* DetailKontakViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E79AF27F7366A00B1D7E2 /* DetailKontakViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		847E79A327F5C79600B1D7E2 /* ValueData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueData.swift; sourceTree = "<group>"; };
 		847E79AB27F5D12700B1D7E2 /* DetailKontak.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailKontak.storyboard; sourceTree = "<group>"; };
 		847E79AD27F5D13300B1D7E2 /* DetailKontakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKontakViewController.swift; sourceTree = "<group>"; };
+		847E79AF27F7366A00B1D7E2 /* DetailKontakViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKontakViewModel.swift; sourceTree = "<group>"; };
 		A169DF27618802B9F507DA83 /* Pods_MiniProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 			children = (
 				847E79AB27F5D12700B1D7E2 /* DetailKontak.storyboard */,
 				847E79AD27F5D13300B1D7E2 /* DetailKontakViewController.swift */,
+				847E79AF27F7366A00B1D7E2 /* DetailKontakViewModel.swift */,
 			);
 			path = DetailKontak;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				847E797327F568A800B1D7E2 /* ViewController.swift in Sources */,
 				847E796F27F568A800B1D7E2 /* AppDelegate.swift in Sources */,
 				847E797127F568A800B1D7E2 /* SceneDelegate.swift in Sources */,
+				847E79B027F7366A00B1D7E2 /* DetailKontakViewModel.swift in Sources */,
 				847E79A027F5AD0E00B1D7E2 /* ListKontakViewModel.swift in Sources */,
 				847E799E27F5ABDA00B1D7E2 /* InputKontakViewController.swift in Sources */,
 				847E799827F5AAF700B1D7E2 /* ListKontakViewController.swift in Sources */,

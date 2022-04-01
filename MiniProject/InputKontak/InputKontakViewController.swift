@@ -23,7 +23,6 @@ class InputKontakViewController: UIViewController {
     }
 
     @IBAction func saveTapped(_ sender: Any) {
-        viewModel.itemList.bind(onNext: <#T##([DataModel]) -> Void#>)
         viewModel.insertItem(name: fieldName.text ?? "", no: fieldNotelp.text ?? "")
         navigationController?.popViewController(animated: true)
         
